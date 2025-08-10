@@ -224,7 +224,18 @@ section {
 
 .project-description {
     margin-bottom: 1.5rem;
-    opacity: 0.8;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .project-tech {
