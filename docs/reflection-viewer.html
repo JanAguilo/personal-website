@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Reflection - Jan Aguiló Plana</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="reflection-page">
+        <div class="container">
+            <div class="back-link">
+                <a href="index.html#reflections">← Back to Portfolio</a>
+            </div>
+            
+            <article class="reflection-content">
+                <h1 class="reflection-title" id="reflection-title">Loading...</h1>
+                <div class="reflection-date" id="reflection-date">Loading...</div>
+                
+                <div class="reflection-text" id="reflection-content">
+                    <p>Loading reflection content...</p>
+                </div>
+                
+                <div class="reflection-meta">
+                    <span class="reflection-author">Jan Aguiló Plana</span>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">think different.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to get URL parameters
+        function getUrlParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        
+        // Function to load and display the reflection content
+        async function loadReflection() {
+            try {
+                const reflectionId = getUrlParameter('id');
+                if (!reflectionId) {
+                    throw new Error('No reflection ID provided');
+                }
+                
+                // First, load the reflections.json to get metadata
+                const reflectionsResponse = await fetch('reflections.json');
+                const reflections = await reflectionsResponse.json();
+                
+                // Find the specific reflection
+                const reflection = reflections.find(r => r.id === reflectionId);
+                if (!reflection) {
+                    throw new Error('Reflection not found');
+                }
+                
+                // Update the page title
+                document.title = `${reflection.title} - Jan Aguiló Plana`;
+                
+                // Update the HTML elements with metadata
+                document.getElementById('reflection-title').textContent = reflection.title;
+                document.getElementById('reflection-date').textContent = reflection.date;
+                
+                // Now load the actual content from the text file
+                const contentResponse = await fetch(reflection.filename);
+                const text = await contentResponse.text();
+                
+                // Split the text into lines
+                const lines = text.split('\n').filter(line => line.trim() !== '');
+                
+                // Extract content (everything after the first two lines - title and date)
+                const content = lines.slice(2).join('\n');
+                
+                // Convert the content to HTML paragraphs
+                const contentElement = document.getElementById('reflection-content');
+                contentElement.innerHTML = '';
+                
+                // Split content by single newlines to create paragraphs
+                const paragraphs = content.split('\n');
+                
+                paragraphs.forEach(paragraph => {
+                    if (paragraph.trim()) {
+                        const p = document.createElement('p');
+                        const cleanText = paragraph.trim();
+                        p.textContent = cleanText;
+                        contentElement.appendChild(p);
+                    }
+                });
+                
+            } catch (error) {
+                console.error('Error loading reflection:', error);
+                document.getElementById('reflection-title').textContent = 'Error Loading Reflection';
+                document.getElementById('reflection-content').innerHTML = '<p>There was an error loading the reflection content.</p>';
+            }
+        }
+        
+        // Load the reflection when the page loads
+        document.addEventListener('DOMContentLoaded', loadReflection);
+    </script>
+</body>
+</html>

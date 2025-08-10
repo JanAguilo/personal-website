@@ -1,0 +1,23 @@
+[
+  {
+    "id": "reflection-1",
+    "title": "ONCE REVER, ALWAYS REVER",
+    "date": "1 agust 2025",
+    "filename": "reflections/ONCE REVER, ALWAYS REVER.txt",
+    "preview": "My last day at REVER and the lessons learned about ownership, frustration management, and the importance of making things happen."
+  },
+  {
+    "id": "reflection-2",
+    "title": "My solo weekend trip to Berlin and Paris to win €10k",
+    "date": "2024",
+    "filename": "reflections/berlin-paris-trip.txt",
+    "preview": "The story of how I traveled solo to win a hackathon and the lessons learned about taking risks and thinking differently."
+  },
+  {
+    "id": "reflection-3",
+    "title": "Quotes and sentences that define me",
+    "date": "2024",
+    "filename": "reflections/quotes-that-define-me.txt",
+    "preview": "A collection of quotes, sentences, and principles that have shaped my thinking and approach to life and work."
+  }
+]

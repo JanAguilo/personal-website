@@ -29,9 +29,9 @@
     <section class="hero-description-section">
         <div class="container">
             <div class="hero-description">
-                <p>I'm Jan Aguiló Plana — a Mathematical Engineering and Data Science student who believes in the power of data to transform businesses. My journey combines rigorous academic training with real-world startup experience.</p>
-                <p>As an entrepreneur and hackathon winner, I've worked on AI-driven projects, built data infrastructure in e-commerce at REVER, and created multiple integrations across Shopify, Zapier, and logistics systems. I'm passionate about building efficient products that scale.</p>
-                <p>I believe in learning from real users and creating startup magic from MVPs. My approach? Go big or go home, but always with data as the compass. I think different about problems and build solutions that matter.</p>
+                <p>Hi, I'm Jan. I don't like convention. I question everything. Combined with my natural ambition and curiosity, this pushes me to “live in the future and build what seems interesting,” as PG puts it.</p>
+                <p>I am intensely competitive. From friendly football matches to hackathons, I play to win, and I am never satisfied because I always want more.</p>
+                <p>I believe that who you are drives what you build, not the other way around, which is why I have chosen to present myself by talking about who I am rather than what I do.</p>
             </div>
         </div>
     </section>
@@ -96,26 +96,10 @@
     <!-- Personal Reflections Section -->
     <section class="reflections">
         <div class="container">
-            <h2 class="section-title">Personal Reflections</h2>
-            <div class="reflections-list">
-                <article class="reflection-item">
-                    <h3 class="reflection-title">
-                        <a href="reflection-1.html">The Art of Thinking Different in Data Science</a>
-                    </h3>
-                    <p class="reflection-preview">In a world flooded with data, the real challenge isn't collecting information—it's asking the right questions.</p>
-                </article>
-                <article class="reflection-item">
-                    <h3 class="reflection-title">
-                        <a href="reflection-2.html">From MVP to Scale: Lessons from the Trenches</a>
-                    </h3>
-                    <p class="reflection-preview">Building startups isn't just about code—it's about creating magic from minimal viable products.</p>
-                </article>
-                <article class="reflection-item">
-                    <h3 class="reflection-title">
-                        <a href="reflection-3.html">Why Mathematical Engineering Matters in AI</a>
-                    </h3>
-                    <p class="reflection-preview">The intersection of mathematical rigor and engineering pragmatism creates the foundation for truly innovative AI solutions.</p>
-                </article>
+            <h2 class="section-title">Blog & Thoughts</h2>
+            <div class="reflections-list" id="reflections-list">
+                <!-- Reflections will be loaded dynamically from reflections.json -->
+                <p>Loading reflections...</p>
             </div>
         </div>
     </section>
@@ -153,5 +137,50 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <script>
+        // Function to load and display reflections from JSON
+        async function loadReflections() {
+            try {
+                const response = await fetch('reflections.json');
+                const reflections = await response.json();
+                
+                const reflectionsList = document.getElementById('reflections-list');
+                reflectionsList.innerHTML = '';
+                
+                reflections.forEach(reflection => {
+                    const article = document.createElement('article');
+                    article.className = 'reflection-item';
+                    
+                    const title = document.createElement('h3');
+                    title.className = 'reflection-title';
+                    
+                    const link = document.createElement('a');
+                    link.href = `reflection-viewer.html?id=${reflection.id}`;
+                    link.textContent = reflection.title;
+                    
+                    title.appendChild(link);
+                    article.appendChild(title);
+                    
+                    // Add preview text if available
+                    if (reflection.preview) {
+                        const preview = document.createElement('p');
+                        preview.className = 'reflection-preview';
+                        preview.textContent = reflection.preview;
+                        article.appendChild(preview);
+                    }
+                    
+                    reflectionsList.appendChild(article);
+                });
+                
+            } catch (error) {
+                console.error('Error loading reflections:', error);
+                document.getElementById('reflections-list').innerHTML = '<p>Error loading reflections. Please try again later.</p>';
+            }
+        }
+        
+        // Load reflections when the page loads
+        document.addEventListener('DOMContentLoaded', loadReflections);
+    </script>
 </body>
 </html> 
