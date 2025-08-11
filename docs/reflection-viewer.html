@@ -11,7 +11,7 @@
     <section class="reflection-page">
         <div class="container">
             <div class="back-link">
-                <a href="index.html#reflections">← Back to Portfolio</a>
+                <a href="index.html#reflections">← Back</a>
             </div>
             
             <article class="reflection-content">
@@ -81,14 +81,18 @@
                 const contentElement = document.getElementById('reflection-content');
                 contentElement.innerHTML = '';
                 
-                // Split content by single newlines to create paragraphs
-                const paragraphs = content.split('\n');
+                const paragraphs = content.split('\n'); // Split by single newline for paragraphs
                 
                 paragraphs.forEach(paragraph => {
                     if (paragraph.trim()) {
                         const p = document.createElement('p');
                         const cleanText = paragraph.trim();
-                        p.textContent = cleanText;
+                        
+                        // Convert URLs to clickable links
+                        const urlRegex = /(https?:\/\/[^\s]+)/g;
+                        const textWithLinks = cleanText.replace(urlRegex, '<a href="$1" target="_blank" class="reflection-link">$1</a>');
+                        
+                        p.innerHTML = textWithLinks;
                         contentElement.appendChild(p);
                     }
                 });
