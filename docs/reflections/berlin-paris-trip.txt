@@ -1,9 +1,45 @@
 My solo weekend trip to Berlin and Paris to win €10k
 
-2024
+8th July 2025
 
-This is a placeholder for your Berlin-Paris trip reflection. 
+This is the story of one of the most unexpected weekends of my life (not to say the most). If you want the short version, you can check here: https://www.linkedin.com/feed/update/urn:li:activity:7348074420529197056/ )
 
-Write your story here about how you traveled solo to win the hackathon, the challenges you faced, and the lessons learned about taking risks and thinking differently.
+It was a normal Tuesday (1st July) in Barcelona when I received a notification saying that I was accepted to the YC x Paris event that was taking place next Monday (7th July), but I didn't buy any flights yet. Also, hours later I saw in LinkedIn that Peec.ai (an AI Search Startup that raised 7M from 20VC in a 24h deal two weeks before) was organizing a €10k hackathon in Berlin on that same Saturday (5th July). So what I immediately did was to tell my friends about it. Unfortunately (at least I thought it was unfortunately at that time), they couldn't attend to any of those. So I found myself in the situation of choosing whether to go alone or not going, taking into account the flights cost was 400€ in total. I let the time pass until Thursday, when I finally decided to go all in and take the risk. I guess I wanted to spend some time traveling alone and participate in a hackathon by my own. Me alone, 3 days around Europe. 
 
-You can add more paragraphs by leaving blank lines between them, just like in your REVER reflection.
+So I woke up at 3:00 AM on Saturday and headed to the airport. When I arrived in Berlin, I just had time to visit the Berlin wall and go straight to the hackathon place. Immediately after arriving, I met an Italian guy called Andrea. I didn't need more than 5 minutes to know he was smart and ambitious. But still I decided to stay in my place. After that, teams were being created and I still wanted to go alone, until I saw him joining 3 other guys, 2 Indian (Shreehari, Shyju) and 1 Chinese (Ignatius Jordi). And I told myself: "Ok Jan, think for a moment, why are you going to participate alone if you can join a team of 4 and learn from them?". So I decided to stand up and join them. None of us knew each other before, but from the first moment I knew we were going to have a great team dynamic. And I was right. We first brainstormed for 1 hour until we reached a great idea and after that we distributed tasks effectively, each of us doing "their" thing. And this combined with the passion and the strong desire to win we had, we ended up defeating the other 36 teams and taking the €10k prize.
+
+After that we talked for a while with the other participants and the Peec.ai team. It was really inspiring talking with the founders and team members of a startup who is really going places by revolutionizing the AI Search sector. It was around 23:00 when we had to leave, and with all that, I had my flight the next day at 7:00 AM to Paris and I didn't have still any place to sleep. As a coincidence, Andrea also had his flight the next day at 6:00 AM and didn't have any place to sleep either. So we said: "Why don't we celebrate the victory?". And that's what we did. We met with a friend he had and we stayed up all night partying in Berlin. It felt amazing. But unfortunately, we had to leave and say goodbye to each other. And with that and the fact that I didn't sleep for 30h, I headed to Paris by my own.
+
+When I arrived to Paris it was raining a lot and it was really cold. Also, I didn't have any place to sleep yet. But I didn't care, I was still riding the high from Saturday. I visited the city the whole day and on the evening I wanted to celebrate by myself the victory, so I decided to take a little personal prize. I went alone in a restaurant in front of the Eiffel Tower, and ordered oysters, a 1kg duck fillet and a cup of wine. Because I could and I wanted to. People were staring at me thinking I was kind of weirdo. But again, I didn't care. In fact, I think these situations are necessary as happiness relates to living for yourself and not for others, and you only appreciate that when people stares at you thinking "this guy it's not normal" and you don't care. Because in the end, what is "normal"? It's one of the most dangerous words that exist. 
+
+Sorry, I let my thoughts write. Continuing with the weekend, Monday arrived and the YC x Paris event was taking place at 17:00 at the "Amphithéâtre de la Sorbonne". Arriving there on time, I saw a huge queue. So there I was. Already in the queue, I met with Charlie. He is a guy from Belgium 2 years younger than me studying in the US. Again, I didn't need more than 5 minutes to realize how ambitious he is. So we talked for over an hour and then the event started. The first part of the event consisted of a talk and Q&A from 2 YC general partners, Tom Blomfield (GoCardless and Monzo co-founder) and Nicolas Dessaigne (Algolia co-founder), and 2 YC founders, Solomon Hykes (Docker) and Paul Copplestone (Supabase). We heard plenty of stories, learnings and practical advice from top world class founders.
+
+The second part of the event was all about networking, which I think I have a different understanding of the term than everyone else. I feel that people arrive to any event with the goal of getting as many LinkedIn profiles as possible, like if it was a competition and the one who gets more "contacts" after the event wins. For me that doesn't make any sense, because a year later you won't remember anyone from there. Not even the same night. Perhaps you may remember someone, but since you haven't had a deep conversation with them you won't be sure how they can benefit you and vice versa. To make this thought clear I will adapt a sentence from PG about startups to justify it: it's better to make something that few users love than something that lots of people like. So I apply these to people in networking events: it's better to truly know a single person rather than just going around asking for the LinkedIn of unknowns who will then still be unknowns. In my case, Charlie was that one person. And we talked during all the networking time about our passions, hobbies, visions, future, etc. and we could have gone on and on for hours. But I had to leave to the airport. 
+
+With that, the weekend ended. From this experience I would take 2 important lessons. 1. Do things and take risks. I once heard that the amount of time a young person stays at home is inversely proportional to success. And I agree. The easy thing in my place would have been not to pay the 400€ for the flights and just think that I wouldn't have won the hackathon because there would have been lots of talented people better than me and that the YC event would just be a simple talk. But I had this internal hard feeling I had to go. What should I have done instead by staying in Barcelona? I guess we'll never know. 2. Surround yourself with people having similar life goals as yours. These events are full of top talented and really ambitious people. Benefit from that. I leave this kind of events with a huge feeling of motivation that I cannot explain. It confirms that I am following the correct path to follow my dreams but also makes me realize how much room for learning and growth there is.
+
+Just do things. I was "lucky" that the weekend ended like that. But it also could have happened that I participated alone, didn't win, didn't meet anyone and the YC event was shit. But you don't know until you do it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
