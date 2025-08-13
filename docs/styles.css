@@ -413,6 +413,16 @@ section + section {
     
     .hero-description {
         text-align: center;
+        padding: 0 1rem;
+    }
+    
+    .hero-description p {
+        text-align: justify !important;
+        text-justify: inter-word !important;
+        word-spacing: 0.05em;
+        letter-spacing: 0.01em;
+        word-break: normal;
+        overflow-wrap: break-word;
     }
     
     .section-title {
@@ -434,6 +444,19 @@ section + section {
     
     .container {
         padding: 0 1rem;
+    }
+    
+    .top-nav {
+        padding: 0.75rem 1rem;
+    }
+    
+    .nav-right {
+        gap: 1rem;
+    }
+    
+    .nav-contact {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.6rem;
     }
 }
 
@@ -655,6 +678,8 @@ section + section {
     padding: 0.5rem 0.75rem;
     border-radius: 6px;
     border: 1px solid transparent;
+    white-space: nowrap;
+    display: inline-block;
 }
 
 .nav-contact:hover {
